@@ -1,4 +1,6 @@
+//! Needs to commented at production
 import * as dotenv from 'dotenv';
+
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
