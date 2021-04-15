@@ -20,9 +20,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Routes
-app.get("/", (req, res) => res.send(`API is running at http://localhost:4000`));
+app.get("/", (req, res) => res.send(`API is running at http://localhost:5000`));
 app.use(routes);
 
-app.listen(4000, () => {
+app.listen(5000, () => {
     console.log("Node server started.");
 });
