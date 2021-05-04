@@ -1,7 +1,7 @@
 // Mapping file for routes
 import { Router } from 'express'
 import { asocRoutes } from '../api/asoc'
-import { authRoutes } from '../auth'
+import { authRoutes } from '../api/auth'
 import podcastRoutes from './podcasts.routes'
 
 const router = Router()
