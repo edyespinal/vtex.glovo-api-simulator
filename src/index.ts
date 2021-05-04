@@ -1,6 +1,6 @@
 //! Needs to commented at production
-import * as dotenv from 'dotenv'
-dotenv.config()
+// import * as dotenv from 'dotenv'
+// dotenv.config()
 
 import express from 'express'
 import morgan from 'morgan'

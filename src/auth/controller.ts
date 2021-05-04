@@ -18,7 +18,7 @@ export const signin = async (req: Request, res: Response) => {
           expires,
           admin,
         },
-        process.env.SECRET as Secret
+        'PodderIsGonnaTakeOverTheWorld!' as Secret
       )
       return res.status(200).json({
         id,
@@ -47,7 +47,7 @@ export const signup = async (req: Request, res: Response, next: any) => {
         id,
         email,
       },
-      process.env.SECRET as Secret
+      'PodderIsGonnaTakeOverTheWorld!' as Secret
     )
     console.log(token)
 
