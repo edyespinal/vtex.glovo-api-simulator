@@ -1,15 +1,9 @@
-// Mapping file for routes
 import { Router } from 'express'
-import { authRoutes } from '../auth'
-import { asocRoutes } from '../api/asoc'
-import { rephonicRoutes } from '../api/rephonic'
-import podcastRoutes from './podcasts.routes'
+import { patchProduct } from '../controller'
 
 const router = Router()
 
-router.use('/auth', authRoutes)
-router.use('/asoc', asocRoutes)
-router.use('/api/rephonic', rephonicRoutes)
-router.use('/podcasts', podcastRoutes)
+router.get('/', (req, res) => res.send('Glovo response simulator'))
+router.patch('/stores/:storeId/products/:productId', patchProduct)
 
 export default router
