@@ -16,6 +16,6 @@ app.use(express.json())
 // Routes
 app.use(routes)
 
-app.listen(3000, () => {
-  console.log('Server running')
+app.listen(process.env.PORT, () => {
+  console.log(`Server running on ${process.env.PORT}`)
 })
