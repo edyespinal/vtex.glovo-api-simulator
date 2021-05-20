@@ -1,1 +1,0 @@
-# Glovo API Response Simlator

@@ -1,4 +1,4 @@
-import { Request, Response } from 'express'
+import type { Request, Response } from 'express'
 
 export const patchProduct = async (req: Request, res: Response) => {
   const { authorization } = req.headers
@@ -9,10 +9,10 @@ export const patchProduct = async (req: Request, res: Response) => {
     })
   }
 
-  const { storeId, productId } = req.params
+  const { productId } = req.params
   const { price, available } = req.body
 
-  const updatedsProduct: UpdatedProduct = {
+  const updatedProduct: UpdatedProduct = {
     id: productId,
     name: 'Product name',
     price,
@@ -21,5 +21,5 @@ export const patchProduct = async (req: Request, res: Response) => {
     available,
   }
 
-  res.status(200).json(updatedsProduct)
+  res.status(200).json(updatedProduct)
 }
